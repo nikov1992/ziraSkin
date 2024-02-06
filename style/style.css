@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+header{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    /* padding: 5px; */
+    position: fixed;
+
+}
+
+.animate{
+    backdrop-filter: blur(10px);   
+    transition: backdrop-filter 0.5s  ease;
+}
+
+/* .animateNo{
+    backdrop-filter: blur(0px);   
+    transition: backdrop-filter 0.5s  ease;
+} */
+
+.mobileMenu{
+    display: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* backdrop-filter: blur(0px);    */
+    transition: backdrop-filter 0.5s  ease;
+}
+
+
+.menuBurger img{
+    width: 40%;
+    backdrop-filter: blur(0px);   
+    display: block;
+    /* z-index: 2; */
+}
+
+.menuBurger{
+    display: flex;
+    justify-content: left;
+    margin-left: 10px;
+    
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+.logo img{
+    width: 80%;
+    transition: width 0.5s  ease;
+}
+
+.carrousel .nico img{
+    height: 2000px;
+}
+
+.logoAnimado img{
+    width: 55%;
+    transition: width 0.5s  ease;
+}
+
+.cart{
+    display: flex;
+    justify-content: right;
+    margin-right: 10px;
+}
+
+.cart img{
+    width: 30%;
+}
+
+.menuBurger img{
+    width: 30%;
+}
+
+
+
+
+/* DROPMENU */
+.dropMenu{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    /* display: none;
+     */
+     opacity: 1; /* Inicialmente visible */
+     transition: opacity 0.5s ease; /* Transición suave para la opacidad */
+     overflow: hidden; /* Oculta el contenido que sobrepasa el alto máximo */
+     max-height: 0; 
+    
+}
+
+.list{
+    display: grid;
+    gap: 10vh;
+    font-size: 5vh;
+    list-style: none;
+}
+
+.dpMenuOn{
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orange;
+    opacity: 1; /* Mantiene la opacidad en 1 */
+    max-height: 1000px; 
+}
+
+
